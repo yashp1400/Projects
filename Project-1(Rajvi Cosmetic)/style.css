@@ -57,11 +57,15 @@
 }
 
 .nav1{
-    float: right;
+    /* float: right; */
     color: #FF748B;
     padding: 3px 4px;
     font-size: large;
     font-family: monospace;
+}
+
+.navv{
+justify-content: end;
 }
 
 .navbarmain{
@@ -124,7 +128,7 @@
   .nav6{
     height: 600px;
     width: 100%;
-    background-image: url(/images/bgimg.jpg);
+    background-image: url(images/bgimg.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     text-align: center;
@@ -282,7 +286,7 @@
       }
 
       .makeappo{
-        background-image: url(/images/bgimg2.avif);
+        background-image: url(images/bgimg2.avif);
         background-repeat: no-repeat;
         background-size: 100% 100%;
         height: 500px;
@@ -529,7 +533,7 @@
       }
 
       .treatimg{
-        background-image: url(/images/treatment.jpg);
+        background-image: url(images/treatment.jpg);
         background-repeat: no-repeat;
         background-position: 0px 0px;
         background-size: 100% 100%;
