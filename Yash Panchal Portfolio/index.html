@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>FreeFolio - Freelancer Portfolio Template</title>
+    <title>Yash Panchal Portfolio</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -24,6 +24,14 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -45,7 +53,7 @@
             <a href="#portfolio" class="nav-item nav-link text-dark">Portfolio</a>
             <a href="#contact" class="nav-item nav-link text-dark">Contact</a>
         </div>
-        <a href="#contact" class="btn btn-outline-dark d-none d-lg-block">Hire Me</a>
+        <a href="https://wa.me/qr/DZQMT2WC4VM2I1" class="btn btn-dark">Massage Me</a>
     </div>
 </nav>
 <!-- Navbar End -->
@@ -86,7 +94,7 @@
                 <h1 class="typed-text-output d-inline font-weight-lighter text-danger"></h1>
                 <div class="typed-text d-none">Web Designer</div>
                 <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                    <a href="My CV.pdf" class="btn btn-outline-info mr-5">Download CV</a>
+                    <a href="YashPanchal CV.pdf" class="btn btn-outline-info mr-5">Download CV</a>
                     <!-- <button type="button" class="btn-play" data-toggle="modal"
                         data-src="" data-target="#videoModal">
                         <span></span>
@@ -299,7 +307,7 @@
     <div class="container">
         <div class="position-relative d-flex align-items-center justify-content-center">
             <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px lightblue;">Gallery</h1>
-            <h1 class="position-absolute text-uppercase text-dark">My Portfolio</h1>
+            <h1 class="position-absolute text-uppercase text-dark">My Projects</h1>
         </div>
         <div class="row">
             <div class="col-12 text-center mb-2">
@@ -433,18 +441,30 @@
             </div>
         </div>
     </div>
+</div><br><br><br><br><br><br><br>
+
+<div class="container">
+<div class="col-md-12 text-center">
+    <h1 class="display-4 text-uppercase text-white" style="-webkit-text-stroke: 1px lightblue;">View My Projects</h1>
+    <br><br>
+    <div class="row">
+        <div class="col-md-4">
+    <a href="https://yashp1400.github.io/YashuPortfolio.github.io/" class="btn btn-info">PROJECT 1</a>
+</div><br><br><br>
+        <div class="col-md-4">
+    <a href="https://yashp1400.github.io/Project-1.github.io/" class="btn btn-info">PROJECT 2</a>
+</div><br><br><br>
+        <div class="col-md-4">
+    <a href="https://yashp1400.github.io/Project-2.github.io/" class="btn btn-info">PROJECT 3</a>
+</div>
+</div>
+    
+</div>
 </div>
 <!-- Portfolio End -->
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 <!-- Contact Start -->
 <div class="container-fluid py-5" id="contact">
     <div class="container">
@@ -456,33 +476,23 @@
             <div class="col-lg-8">
                 <div class="contact-form text-center">
                     <div id="success"></div>
-                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                    <form name="sentMessage" id="contactForm" method="POST" action="https://your-api.com/contacts">
                         <div class="form-row">
                             <div class="control-group col-sm-6">
-                                <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
-                                    required="required" data-validation-required-message="Please enter your name" />
-                                <p class="help-block text-danger"></p>
+                                <input type="text" class="form-control p-4" id="name" name="name" placeholder="Your Name" required />
                             </div>
                             <div class="control-group col-sm-6">
-                                <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
-                                    required="required" data-validation-required-message="Please enter your email" />
-                                <p class="help-block text-danger"></p>
+                                <input type="email" class="form-control p-4" id="email" name="email" placeholder="Your Email" required />
                             </div>
                         </div>
                         <div class="control-group">
-                            <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
-                                required="required" data-validation-required-message="Please enter a subject" />
-                            <p class="help-block text-danger"></p>
+                            <input type="text" class="form-control p-4" id="subject" name="subject" placeholder="Subject" required />
                         </div>
                         <div class="control-group">
-                            <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
-                                required="required"
-                                data-validation-required-message="Please enter your message"></textarea>
-                            <p class="help-block text-danger"></p>
+                            <textarea class="form-control py-3 px-4" rows="5" id="message" name="message" placeholder="Message" required></textarea>
                         </div>
                         <div>
-                            <button class="btn btn-outline-dark" type="submit" id="sendMessageButton">Send
-                                Message</button>
+                            <button class="btn btn-outline-dark" type="submit" id="sendMessageButton">Send Message</button>
                         </div>
                     </form>
                 </div>
@@ -490,6 +500,46 @@
         </div>
     </div>
 </div>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Collect form data
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+
+    // Validate email format
+    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if (!email.match(emailPattern)) {
+        document.getElementById('success').innerHTML = 
+            '<div class="alert alert-danger">Please enter a valid email address.</div>';
+        return;
+    }
+
+    // Send the POST request
+    fetch('http://localhost:8080/contacts', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, subject, message })
+    })
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById('success').innerHTML = 
+            '<div class="alert alert-success">Message Sent Successfully!</div>';
+        document.getElementById('contactForm').reset();
+    })
+    .catch(error => {
+        document.getElementById('success').innerHTML = 
+            '<div class="alert alert-danger">Something went wrong. Please try again.</div>';
+        console.error('Error:', error);
+    });
+});
+</script>
+
+
 <!-- Contact End -->
 
 
@@ -497,20 +547,12 @@
 <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
     <div class="container text-center py-5">
         <div class="d-flex justify-content-center mb-4">
-            <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
-            <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-            <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+            <a class="btn btn-light btn-social mr-2" href="https://wa.me/qr/DZQMT2WC4VM2I1"><i class="fa-brands fa-whatsapp"></i></a>
+            <a class="btn btn-light btn-social mr-2" href="https://github.com/yashp1400/"><i class="fa-brands fa-github"></i></i></a>
+            <a class="btn btn-light btn-social mr-2" href="http://www.linkedin.com/in/panchal-yash-89293a27b"><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-light btn-social" href="https://www.instagram.com/its.yashu.p/"><i class="fab fa-instagram"></i></a>
         </div>
-        <div class="d-flex justify-content-center mb-3">
-            <a class="text-white" href="#">Privacy</a>
-            <span class="px-3">|</span>
-            <a class="text-white" href="#">Terms</a>
-            <span class="px-3">|</span>
-            <a class="text-white" href="#">FAQs</a>
-            <span class="px-3">|</span>
-            <a class="text-white" href="#">Help</a>
-        </div>
+     
        
     </div>
 </div>
