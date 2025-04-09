@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main{
+    width: 100%;
+    height: 100%;
+     background-image: url(bgimg.jpg); 
+     background-repeat: no-repeat;
+    background-size: cover; 
+    
+}
+span{
+    color:black
+}
+.aliggn{
+    width: 350px;
+    display:inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.logo{
+   
+}
+#search{
+    padding: 10px;
+    width: 200px;
+    height: 30px;
+    border: solid 1px;
+    border-radius: 15px;
+}
+
+#about-us>p{
+    width: 60%;
+    text-align: center;
+}
+.item-img{
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+    border-radius: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#order{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.coffee-item{
+    width:20vw;
+    height:20vw;
+    background-color: blue;
+    margin: 5px;
+}

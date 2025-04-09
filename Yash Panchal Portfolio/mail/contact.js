@@ -15,7 +15,7 @@ $(function () {
             $this.prop("disabled", true);
 
             $.ajax({
-                url: "contact.php",
+                url: "http://localhost:8080/contacts", // 👈 Updated URL here
                 type: "POST",
                 data: {
                     name: name,
