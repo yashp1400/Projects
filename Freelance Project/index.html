@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HakuTrends - Women's Fashion Store</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <div class="logo-container logo-variant-2">
+                        <div class="logo-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-first">Haku</span>
+                            <span class="logo-second">Trends</span>
+                        </div>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="collection.html">Collection</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Banner Slider -->
+        <section class="hero-slider">
+            <div class="swiper hero-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="hero-slide">
+                            <img src="Images/banner.webp" alt="Summer Collection" class="hero-img">
+                            <div class="hero-overlay"></div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-8">
+                                        <div class="hero-content" data-aos="fade-right">
+                                            <h1 class="hero-title">Summer Collection 2023</h1>
+                                            <p class="hero-subtitle">Discover the latest trends in women's fashion</p>
+                                            <a href="collection.html" class="btn btn-primary btn-lg">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="hero-slide">
+                            <img src="Images/banner1.webp" alt="Elegant Evening Wear" class="hero-img">
+                            <div class="hero-overlay"></div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-8">
+                                        <div class="hero-content" data-aos="fade-right">
+                                            <h1 class="hero-title">Elegant Evening Wear</h1>
+                                            <p class="hero-subtitle">Stunning dresses for special occasions</p>
+                                            <a href="collection.html" class="btn btn-primary btn-lg">Explore</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="hero-slide">
+                            <img src="Images/banner3.webp" alt="Casual Comfort" class="hero-img">
+                            <div class="hero-overlay"></div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-8">
+                                        <div class="hero-content" data-aos="fade-right">
+                                            <h1 class="hero-title">Casual Comfort</h1>
+                                            <p class="hero-subtitle">Stylish everyday wear for the modern woman</p>
+                                            <a href="collection.html" class="btn btn-primary btn-lg">View Collection</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <!-- Highlighted Categories -->
+        <section class="categories-section py-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-5" data-aos="fade-up">Shop by Category</h2>
+                <div class="row g-4">
+                    <!-- Category 1 -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="category-card">
+                            <div class="category-img">
+                                <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Dresses" class="img-fluid">
+                            </div>
+                            <div class="category-content">
+                                <h3>Dresses</h3>
+                                <a href="collection.html" class="btn btn-outline-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Category 2 -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="category-card">
+                            <div class="category-img">
+                                <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Tops" class="img-fluid">
+                            </div>
+                            <div class="category-content">
+                                <h3>Tops</h3>
+                                <a href="collection.html" class="btn btn-outline-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Category 3 -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="category-card">
+                            <div class="category-img">
+                                <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Bottoms" class="img-fluid">
+                            </div>
+                            <div class="category-content">
+                                <h3>Bottoms</h3>
+                                <a href="collection.html" class="btn btn-outline-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Outfits -->
+        <section class="featured-section py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title text-center mb-5" data-aos="fade-up">Featured Outfits</h2>
+                <div class="row g-4">
+                    <!-- Outfit 1 -->
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="outfit-card">
+                            <div class="outfit-img">
+                                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Summer Dress" class="img-fluid">
+                                <div class="outfit-overlay">
+                                    <a href="#" class="btn btn-light">View Details</a>
+                                </div>
+                            </div>
+                            <div class="outfit-info">
+                                <h4>Summer Floral Dress</h4>
+                                <p class="price">$89.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Outfit 2 -->
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="outfit-card">
+                            <div class="outfit-img">
+                                <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Casual Blouse" class="img-fluid">
+                                <div class="outfit-overlay">
+                                    <a href="#" class="btn btn-light">View Details</a>
+                                </div>
+                            </div>
+                            <div class="outfit-info">
+                                <h4>Casual Silk Blouse</h4>
+                                <p class="price">$59.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Outfit 3 -->
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="outfit-card">
+                            <div class="outfit-img">
+                                <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Designer Jeans" class="img-fluid">
+                                <div class="outfit-overlay">
+                                    <a href="#" class="btn btn-light">View Details</a>
+                                </div>
+                            </div>
+                            <div class="outfit-info">
+                                <h4>Designer Jeans</h4>
+                                <p class="price">$79.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Outfit 4 -->
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="outfit-card">
+                            <div class="outfit-img">
+                                <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Evening Gown" class="img-fluid">
+                                <div class="outfit-overlay">
+                                    <a href="#" class="btn btn-light">View Details</a>
+                                </div>
+                            </div>
+                            <div class="outfit-info">
+                                <h4>Evening Gown</h4>
+                                <p class="price">$129.99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Intro -->
+        <section class="brand-intro py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                        <div class="brand-img">
+                            <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="HakuTrends Brand" class="img-fluid rounded">
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <div class="brand-content">
+                            <h2 class="section-title">Our Story</h2>
+                            <p class="lead">HakuTrends was founded with a simple mission: to provide women with stylish, high-quality clothing that empowers them to express their unique personality.</p>
+                            <p>Our collections are carefully curated to reflect the latest fashion trends while maintaining timeless elegance. We believe that every woman deserves to feel confident and beautiful in what she wears.</p>
+                            <a href="about.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Products -->
+        <section class="products-section py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title text-center mb-5" data-aos="fade-up">All Products</h2>
+                <div class="row g-4">
+                    <!-- Product 1 -->
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Product 1" class="img-fluid">
+                                <div class="product-overlay">
+                                    <a href="#" class="btn btn-light">View Details</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h4>Floral Summer Dress</h4>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="price">$89.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Product 2" class="img-fluid">
+                                <div class="product-overlay">
+                                    <a href="#" class="btn btn-light">View Details</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h4>Casual Silk Blouse</h4>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <p class="price">$59.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3 -->
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Product 3" class="img-fluid">
+                                <div class="product-overlay">
+                                    <a href="#" class="btn btn-light">View Details</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h4>Designer Jeans</h4>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="price">$79.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 4 -->
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Product 4" class="img-fluid">
+                                <div class="product-overlay">
+                                    <a href="#" class="btn btn-light">View Details</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h4>Evening Gown</h4>
+                                <div class="product-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="price">$129.99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-5" data-aos="fade-up">
+                    <a href="gallery.html" class="btn btn-primary btn-lg">View All Products</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials-section py-5">
+            <div class="container">
+                <h2 class="section-title text-center mb-5" data-aos="fade-up">Customer Feedback</h2>
+                
+                <!-- First Row of Testimonials -->
+                <div class="row g-4 mb-4">
+                    <!-- Testimonial 1 -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"I absolutely love my new dress from HakuTrends! The quality is exceptional and it fits perfectly. I've received so many compliments!"</p>
+                            <div class="testimonial-author">
+                                <h5>Sarah Johnson</h5>
+                                <p class="testimonial-date">June 15, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"The customer service at HakuTrends is outstanding. They helped me find the perfect outfit for my special occasion. Highly recommend!"</p>
+                            <div class="testimonial-author">
+                                <h5>Emily Davis</h5>
+                                <p class="testimonial-date">July 2, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="testimonial-text">"I've been shopping at HakuTrends for years and they never disappoint. Their collection is always on-trend and the quality is consistently excellent."</p>
+                            <div class="testimonial-author">
+                                <h5>Jessica Williams</h5>
+                                <p class="testimonial-date">July 18, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial Slider -->
+                <div class="testimonial-slider" data-aos="fade-up">
+                    <div class="swiper testimonial-swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Testimonial 4 -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-text">"The summer collection is absolutely stunning! I've already purchased three dresses and can't wait to see what's next."</p>
+                                    <div class="testimonial-author">
+                                        <h5>Amanda Brown</h5>
+                                        <p class="testimonial-date">August 5, 2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Testimonial 5 -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-text">"I love how HakuTrends offers both casual and formal options. Their versatile pieces are perfect for my busy lifestyle."</p>
+                                    <div class="testimonial-author">
+                                        <h5>Michelle Taylor</h5>
+                                        <p class="testimonial-date">August 12, 2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Testimonial 6 -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-text">"The attention to detail in their designs is impressive. Every piece feels thoughtfully crafted and stylish."</p>
+                                    <div class="testimonial-author">
+                                        <h5>Rachel Martinez</h5>
+                                        <p class="testimonial-date">August 20, 2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Testimonial 7 -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-text">"I've recommended HakuTrends to all my friends. Their collection is perfect for any occasion and the quality is outstanding."</p>
+                                    <div class="testimonial-author">
+                                        <h5>Olivia Wilson</h5>
+                                        <p class="testimonial-date">September 3, 2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Testimonial 8 -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <p class="testimonial-text">"The new collection is absolutely gorgeous! I love the attention to detail and the quality of the fabrics used."</p>
+                                    <div class="testimonial-author">
+                                        <h5>Sophia Anderson</h5>
+                                        <p class="testimonial-date">September 10, 2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Testimonial 9 -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-text">"HakuTrends has become my go-to for all my fashion needs. Their pieces are stylish, comfortable, and always make me feel confident."</p>
+                                    <div class="testimonial-author">
+                                        <h5>Isabella Garcia</h5>
+                                        <p class="testimonial-date">September 18, 2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+   
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <!-- About & Social -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>About HakuTrends</h5>
+                    <p>Your premier destination for women's fashion, offering the latest trends and styles.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="collection.html">Collection</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to our newsletter for updates and offers.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Shop Info -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Shop Information</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Fashion Street, City</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 8900</li>
+                        <li><i class="fas fa-envelope"></i> info@hakutrends.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 10:00 AM - 8:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Privacy Policy -->
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <button class="btn btn-link text-light" data-bs-toggle="modal" data-bs-target="#privacyModal">
+                        Privacy Policy
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div class="modal fade" id="privacyModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Privacy Policy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>Privacy Policy for HakuTrends</h4>
+                    <p>Last updated: [Current Date]</p>
+                    
+                    <h5>1. Information We Collect</h5>
+                    <p>We collect information that you provide directly to us, including:</p>
+                    <ul>
+                        <li>Name and contact information</li>
+                        <li>Email address</li>
+                        <li>Any other information you choose to provide</li>
+                    </ul>
+
+                    <h5>2. How We Use Your Information</h5>
+                    <p>We use the information we collect to:</p>
+                    <ul>
+                        <li>Respond to your inquiries</li>
+                        <li>Send you marketing communications (with your consent)</li>
+                        <li>Improve our website and services</li>
+                    </ul>
+
+                    <h5>3. Information Sharing</h5>
+                    <p>We do not sell or share your personal information with third parties except as described in this policy.</p>
+
+                    <h5>4. Your Rights</h5>
+                    <p>You have the right to:</p>
+                    <ul>
+                        <li>Access your personal information</li>
+                        <li>Correct inaccurate information</li>
+                        <li>Request deletion of your information</li>
+                        <li>Opt-out of marketing communications</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - HakuTrends</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <h1 class="brand-name">HakuTrends</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="collection.html">Collection</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-5 mt-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8 col-sm-10">
+                    <!-- Login Form -->
+                    <div class="login-card" id="loginForm" data-aos="fade-up">
+                        <div class="text-center mb-4">
+                            <div class="login-logo">
+                                <i class="fas fa-tshirt"></i>
+                                <h1 class="brand-name">HakuTrends</h1>
+                            </div>
+                            <h2 class="login-title">Welcome Back</h2>
+                            <p class="login-subtitle">Enter your email and we will send you a login code</p>
+                        </div>
+                        
+                        <form class="login-form needs-validation" novalidate>
+                            <div class="mb-4">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                    <input type="email" class="form-control" id="loginEmail" placeholder="Your Email Address" required>
+                                    <div class="invalid-feedback">
+                                        Please enter a valid email address.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-lg w-100 mb-3">Continue</button>
+                            
+                            <div class="text-center">
+                                <p class="mb-0">Don't have an account? <a href="#" class="text-decoration-none toggle-form" data-form="signup">Sign up</a></p>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- Signup Form -->
+                    <div class="login-card" id="signupForm" data-aos="fade-up" style="display: none;">
+                        <div class="text-center mb-4">
+                            <div class="login-logo">
+                                <i class="fas fa-tshirt"></i>
+                                <h1 class="brand-name">HakuTrends</h1>
+                            </div>
+                            <h2 class="login-title">Create Account</h2>
+                            <p class="login-subtitle">Join our community of fashion lovers</p>
+                        </div>
+                        
+                        <form class="signup-form needs-validation" novalidate>
+                            <div class="mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                    <input type="text" class="form-control" id="fullName" placeholder="Full Name" required>
+                                    <div class="invalid-feedback">
+                                        Please enter your full name.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                    <input type="email" class="form-control" id="signupEmail" placeholder="Email Address" required>
+                                    <div class="invalid-feedback">
+                                        Please enter a valid email address.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                    <input type="tel" class="form-control" id="phone" placeholder="Phone Number" required>
+                                    <div class="invalid-feedback">
+                                        Please enter your phone number.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                                    <div class="invalid-feedback">
+                                        Please enter a password.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                    <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" required>
+                                    <div class="invalid-feedback">
+                                        Passwords do not match.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="terms" required>
+                                <label class="form-check-label" for="terms">I agree to the <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">Terms & Privacy Policy</a></label>
+                                <div class="invalid-feedback">
+                                    You must agree to the terms and conditions.
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-lg w-100 mb-3">Create Account</button>
+                            
+                            <div class="text-center">
+                                <p class="mb-0">Already have an account? <a href="#" class="text-decoration-none toggle-form" data-form="login">Login</a></p>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="login-features mt-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="feature-item">
+                                    <i class="fas fa-lock"></i>
+                                    <h5>Secure Login</h5>
+                                    <p>Your data is protected</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="feature-item">
+                                    <i class="fas fa-bolt"></i>
+                                    <h5>Quick Access</h5>
+                                    <p>No password needed</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="feature-item">
+                                    <i class="fas fa-user-shield"></i>
+                                    <h5>Privacy</h5>
+                                    <p>Your information is safe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <!-- About & Social -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>About HakuTrends</h5>
+                    <p>Your premier destination for women's fashion, offering the latest trends and styles.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="collection.html">Collection</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to our newsletter for updates and offers.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Shop Info -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Shop Information</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Fashion Street, City</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 8900</li>
+                        <li><i class="fas fa-envelope"></i> info@hakutrends.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 10:00 AM - 8:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Privacy Policy -->
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <button class="btn btn-link text-light" data-bs-toggle="modal" data-bs-target="#privacyModal">
+                        Privacy Policy
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div class="modal fade" id="privacyModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Privacy Policy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>Privacy Policy for HakuTrends</h4>
+                    <p>Last updated: [Current Date]</p>
+                    
+                    <h5>1. Information We Collect</h5>
+                    <p>We collect information that you provide directly to us, including:</p>
+                    <ul>
+                        <li>Name and contact information</li>
+                        <li>Email address</li>
+                        <li>Any other information you choose to provide</li>
+                    </ul>
+
+                    <h5>2. How We Use Your Information</h5>
+                    <p>We use the information we collect to:</p>
+                    <ul>
+                        <li>Respond to your inquiries</li>
+                        <li>Send you marketing communications (with your consent)</li>
+                        <li>Improve our website and services</li>
+                    </ul>
+
+                    <h5>3. Information Sharing</h5>
+                    <p>We do not sell or share your personal information with third parties except as described in this policy.</p>
+
+                    <h5>4. Your Rights</h5>
+                    <p>You have the right to:</p>
+                    <ul>
+                        <li>Access your personal information</li>
+                        <li>Correct inaccurate information</li>
+                        <li>Request deletion of your information</li>
+                        <li>Opt-out of marketing communications</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html> 

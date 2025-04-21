@@ -4,324 +4,404 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
-  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness - Nivia Sports</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
     integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FITNESS</title>
+    <style>
+    .navbar-brand {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+    }
+
+    .logo-text {
+        font-size: 2.5rem;
+        font-weight: 800;
+        letter-spacing: 1px;
+        color: #000;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-n {
+        color: #ff4d4d;
+        font-size: 3rem;
+        margin-right: 2px;
+        transform: skew(-10deg);
+    }
+
+    .logo-rest {
+        font-weight: 600;
+    }
+
+    .logo-tagline {
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #666;
+        margin-left: 8px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+        top: -8px;
+    }
+
+    .navbar-nav .nav-link {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+        transition: color 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #ff4d4d !important;
+    }
+
+    @media (max-width: 768px) {
+        .logo-text {
+            font-size: 2rem;
+        }
+        .logo-n {
+            font-size: 2.5rem;
+        }
+        .logo-tagline {
+            font-size: 0.7rem;
+            top: -6px;
+        }
+    }
+    </style>
 </head>
 <body>
     <!-- Header start -->
     <nav class="navbar navbar-expand-sm bg-white navbar-dark sticky-top justify-content-center">
         <div class="container-fluid">
             <div class="col-md-2 ps-5 header">
+                <a href="index.html" class="navbar-brand d-flex align-items-center" aria-label="Nivia Sports Home">
+                    <span class="logo-text">
+                        <span class="logo-n">N</span>
+                        <span class="logo-rest">IVIA</span>
+                    </span>
+                    <span class="logo-tagline">SPORTS</span>
+                </a>
+            </div>
+           
+            <div class="collapse navbar-collapse ps-5 col-md-10" id="collapsiveNav">
                 <ul class="navbar-nav">
-             <li class="nav-item">
-                <a href="index.html" class="nav-link text-dark"><h2>NIVIA</h2></a>
-             </li>
-            </ul>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark ps-5" href="apparel.html" aria-label="Apparel">APPAREL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark ps-5" href="footwear.html" aria-label="Footwear">FOOTWEAR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark ps-5" href="fitness.html" aria-label="Fitness">FITNESS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark ps-5" href="muscle-support.html" aria-label="Muscle Support">MUSCLE SUPPORT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark ps-5" href="accessorise.html" aria-label="Accessories">ACCESSORIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark ps-5" href="clubs.html" aria-label="Clubs">CLUBS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark ps-5" href="LoginSignup.html" aria-label="Login">LOGIN</a>
+                    </li>
+                </ul>
             </div>
-           
-            <div class="collapse navbar-collapse ps-5  col-md-10" id="collapsiveNav">
-            
-             
-    
-             <ul class="navbar-nav">
-                
-                <li class="'nav-item">
-                    <a class="nav-link text-dark ps-5" href="apparel.html">APPAREL</a>
-                </li>
-                <li class="'nav-item">
-                    <a class="nav-link text-dark ps-5" href="footwear.html">FOOTWEAR</a>
-                </li>
-                <li class="'nav-item">
-                    <a class="nav-link text-dark ps-5" href="fitness.html">FITNESS</a>
-                </li>
-                <li class="'nav-item">
-                    <a class="nav-link text-dark ps-5" href="muscle-support.html">MUSCLE SUPPORT</a>
-                </li>
-                <li class="'nav-item">
-                    <a class="nav-link text-dark ps-5" href="accessorise.html">ACCESSORISE</a>
-                </li>
-                <li class="'nav-item">
-                    <a class="nav-link text-dark ps-5" href="clubs.html">CLUBS</a>
-                </li>
-                <li class="'nav-item">
-                  <a class="nav-link text-dark ps-5" href="LoginSingnup.html">LOGIN</a>
-              </li>
-             </ul>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsiveNav">
-              <span class="bi bi-house-fill text-dark"></span>
-          </button>
-           
-           
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsiveNav" aria-controls="collapsiveNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="bi bi-list text-dark"></span>
+            </button>
         </div>
     </nav>
 
     <!-- Header end  -->
 
     <!-- banner start  -->
-
     <div class="col-md-12">
-        <img src="images/banner4.webp" width="100%" alt="">
+        <img src="images/banner4.webp" width="100%" alt="Fitness Collection Banner" class="img-fluid">
     </div>
 
     <!-- banner end  -->
 
     <!-- Section-1 start  -->
-
     <div class="ps-4">
         <div class="col-md-12">
-            
-        <ul class="breadcrumb">
-            <li class="breadcrumb-item"><a class="text-decoration-none text-dark" href="index.html">Home</a></li>
-            <li class="breadcrumb-item active"><a class="text-decoration-none text-dark" href="footwear.html"><b>Fitness</b></a></li>
-        </ul>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-decoration-none text-dark" href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a class="text-decoration-none text-dark" href="fitness.html"><b>Fitness</b></a></li>
+                </ol>
+            </nav>
         </div>
     </div>
 
     <div class="ps-4">
         <div class="col-md-12">
-            <div class="display-5">Fitness</div>
+            <h1 class="display-5">Fitness</h1>
         </div>
     </div>
 
     <div class="ps-4 pt-3">
         <div class="row">
             <div class="col-md-3 slide1">
-               <div class="text-center"><b><i style="font-size: x-large;">Category</i></b></div><br>
-                <ul class="list-group ">
+               <div class="text-center"><h2 class="h4"><b>Category</b></h2></div><br>
+                <ul class="list-group" role="list">
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                       <b>Fitness</b>
-                      <span class="badge text-dark"><b>(96)</b></span>
+                      <span class="badge bg-dark" aria-label="96 items">96</span>
                     </li>
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                       Gym
-                      <span class="badge text-dark">80</span>
+                      <span class="badge bg-dark" aria-label="80 items">80</span>
                     </li>
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                       Home Fitness 
-                      <span class="badge text-dark">25</span>
+                      <span class="badge bg-dark" aria-label="25 items">25</span>
                     </li>
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                       Yoga
-                      <span class="badge text-dark">84</span>
+                      <span class="badge bg-dark" aria-label="84 items">84</span>
                     </li>
                   </ul><br><br>
 
-                  <div class="text-center"><b><i style="font-size: x-large;">Size</i></b></div><br>
+                  <div class="text-center"><h2 class="h4"><b>Size</b></h2></div><br>
                   <div class="size1">
               
-
-               <ul class="list-group ">
+                  <ul class="list-group" role="list">
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                 <input type="checkbox">XS
-                  <span class="badge text-dark">(17)</span>
+                 <div class="form-check">
+                   <input type="checkbox" class="form-check-input" id="xs">
+                   <label class="form-check-label" for="xs">XS</label>
+                 </div>
+                  <span class="badge bg-dark" aria-label="17 items">17</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                 <input type="checkbox">S
-                  <span class="badge text-dark">(33)</span>
+                 <div class="form-check">
+                   <input type="checkbox" class="form-check-input" id="s">
+                   <label class="form-check-label" for="s">S</label>
+                 </div>
+                  <span class="badge bg-dark" aria-label="33 items">33</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                 <input type="checkbox">M
-                  <span class="badge text-dark">(41)</span>
+                 <div class="form-check">
+                   <input type="checkbox" class="form-check-input" id="m">
+                   <label class="form-check-label" for="m">M</label>
+                 </div>
+                  <span class="badge bg-dark" aria-label="41 items">41</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                 <input type="checkbox">L
-                  <span class="badge text-dark">(41)</span>
+                 <div class="form-check">
+                   <input type="checkbox" class="form-check-input" id="l">
+                   <label class="form-check-label" for="l">L</label>
+                 </div>
+                  <span class="badge bg-dark" aria-label="41 items">41</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                 <input type="checkbox">XL
-                  <span class="badge text-dark">(27)</span>
+                 <div class="form-check">
+                   <input type="checkbox" class="form-check-input" id="xl">
+                   <label class="form-check-label" for="xl">XL</label>
+                 </div>
+                  <span class="badge bg-dark" aria-label="27 items">27</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                 <input type="checkbox">XXL
-                  <span class="badge text-dark">(29)</span>
+                 <div class="form-check">
+                   <input type="checkbox" class="form-check-input" id="xxl">
+                   <label class="form-check-label" for="xxl">XXL</label>
+                 </div>
+                  <span class="badge bg-dark" aria-label="29 items">29</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                 <input type="checkbox">0.5KG
-                  <span class="badge text-dark">(2)</span>
+                 <div class="form-check">
+                   <input type="checkbox" class="form-check-input" id="05kg">
+                   <label class="form-check-label" for="05kg">0.5KG</label>
+                 </div>
+                  <span class="badge bg-dark" aria-label="2 items">2</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                 <input type="checkbox">1KG
-                  <span class="badge text-dark">(4)</span>
+                 <div class="form-check">
+                   <input type="checkbox" class="form-check-input" id="1kg">
+                   <label class="form-check-label" for="1kg">1KG</label>
+                 </div>
+                  <span class="badge bg-dark" aria-label="4 items">4</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                 <input type="checkbox">1KG
-                  <span class="badge text-dark">(2)</span>
+                 <div class="form-check">
+                   <input type="checkbox" class="form-check-input" id="15kg">
+                   <label class="form-check-label" for="15kg">1.5KG</label>
+                 </div>
+                  <span class="badge bg-dark" aria-label="2 items">2</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                 <input type="checkbox">1.5KG
-                  <span class="badge text-dark">(2)</span>
+                 <div class="form-check">
+                   <input type="checkbox" class="form-check-input" id="2kg">
+                   <label class="form-check-label" for="2kg">2KG</label>
+                 </div>
+                  <span class="badge bg-dark" aria-label="1 item">1</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                 <input type="checkbox">2KG
-                  <span class="badge text-dark">(1)</span>
+                 <div class="form-check">
+                   <input type="checkbox" class="form-check-input" id="3kg">
+                   <label class="form-check-label" for="3kg">3KG</label>
+                 </div>
+                  <span class="badge bg-dark" aria-label="1 item">1</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                 <input type="checkbox">2KG
-                  <span class="badge text-dark">(3)</span>
+                 <div class="form-check">
+                   <input type="checkbox" class="form-check-input" id="4kg">
+                   <label class="form-check-label" for="4kg">4KG</label>
+                 </div>
+                  <span class="badge bg-dark" aria-label="2 items">2</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                 <input type="checkbox">3KG
-                  <span class="badge text-dark">(1)</span>
+                 <div class="form-check">
+                   <input type="checkbox" class="form-check-input" id="5kg">
+                   <label class="form-check-label" for="5kg">5KG</label>
+                 </div>
+                  <span class="badge bg-dark" aria-label="3 items">3</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                 <input type="checkbox">3KG
-                  <span class="badge text-dark">(1)</span>
+                 <div class="form-check">
+                   <input type="checkbox" class="form-check-input" id="6kg">
+                   <label class="form-check-label" for="6kg">6KG</label>
+                 </div>
+                  <span class="badge bg-dark" aria-label="1 item">1</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                 <input type="checkbox">4KG
-                  <span class="badge text-dark">(2)</span>
+                 <div class="form-check">
+                   <input type="checkbox" class="form-check-input" id="8kg">
+                   <label class="form-check-label" for="8kg">8KG</label>
+                 </div>
+                  <span class="badge bg-dark" aria-label="1 item">1</span>
                 </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                 <input type="checkbox">4KG
-                  <span class="badge text-dark">(2)</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                 <input type="checkbox">5KG
-                  <span class="badge text-dark">(3)</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                 <input type="checkbox">5KG
-                  <span class="badge text-dark">(1)</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                 <input type="checkbox">6KG
-                  <span class="badge text-dark">(1)</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                 <input type="checkbox">8KG
-                  <span class="badge text-dark">(1)</span>
-                </li>
-                
               </ul>
             </div>
 </div>
 <div class="col-md-9 slide2">
     <div class="row">
         <div class="col-md-4">
-            <img src="images/fit1.webp" alt="" height="350px" class="card-image-top">
+            <img src="images/fit1.webp" alt="Nivia Trainer Jump Rope" height="350" class="card-image-top img-fluid">
             <div class="card-body">
-                <p class="card-text text-center"><b>Nivia Trainer Jump Rope</b></p>
-                <p class="card-text text-center text-danger"><b><i class="fa-solid fa-indian-rupee-sign"></i> 139</b></p>
+                <h3 class="card-text text-center h5"><b>Nivia Trainer Jump Rope</b></h3>
+                <p class="card-text text-center text-danger"><b>₹139</b></p>
             </div>
         </div>
         <div class="col-md-4">
-            <img src="images/fit2.jpg" alt="" height="350px" class="card-image-top">
+            <img src="images/fit2.jpg" alt="Nivia Anti-Skid Yoga Mat" height="350" class="card-image-top img-fluid">
             <div class="card-body">
-                <p class="card-text text-center"><b>Nivia Anti-Skid Yoga Mat</b></p>
-                <p class="card-text text-center text-danger"><b><i class="fa-solid fa-indian-rupee-sign"></i> 580</b></p>
+                <h3 class="card-text text-center h5"><b>Nivia Anti-Skid Yoga Mat</b></h3>
+                <p class="card-text text-center text-danger"><b>₹580</b></p>
             </div>
         </div>
         <div class="col-md-4">
-            <img src="images/fit3.jpg" alt="" height="350px" class="card-image-top">
+            <img src="images/fit3.jpg" alt="Venom Weightlifting Gloves" height="350" class="card-image-top img-fluid">
             <div class="card-body">
-                <p class="card-text text-center"><b>Venom Weightlifting Gloves</b></p>
-                <p class="card-text text-center text-danger"><b><i class="fa-solid fa-indian-rupee-sign"></i> 1,090</b></p>
+                <h3 class="card-text text-center h5"><b>Venom Weightlifting Gloves</b></h3>
+                <p class="card-text text-center text-danger"><b>₹1,090</b></p>
             </div>
         </div>
           
 </div>
     <div class="row">
-        <div class="col-md-4 ">
-            <img src="images/fit4.webp" alt="" height="350px" class="card-image-top">
+        <div class="col-md-4">
+            <img src="images/fit4.webp" alt="Crystal 2.0" height="350" class="card-image-top img-fluid">
             <div class="card-body">
-                <p class="card-text text-center"><b>Crystal 2.0</b></p>
-                <p class="card-text text-center text-danger"><b><i class="fa-solid fa-indian-rupee-sign"></i> 350</b></p>
+                <h3 class="card-text text-center h5"><b>Crystal 2.0</b></h3>
+                <p class="card-text text-center text-danger"><b>₹350</b></p>
             </div>
         </div>
-        <div class="col-md-4 ">
-            <img src="images/fit5.webp" alt="" height="350px" class="card-image-top">
+        <div class="col-md-4">
+            <img src="images/fit5.webp" alt="Enduro" height="350" class="card-image-top img-fluid">
             <div class="card-body">
-                <p class="card-text text-center"><b>Enduro</b></p>
-                <p class="card-text text-center text-danger"><b><i class="fa-solid fa-indian-rupee-sign"></i> 530</b></p>
+                <h3 class="card-text text-center h5"><b>Enduro</b></h3>
+                <p class="card-text text-center text-danger"><b>₹530</b></p>
             </div>
         </div>
-        <div class="col-md-4 ">
-            <img src="images/fit6.webp" alt="" height="350px" class="card-image-top">
+        <div class="col-md-4">
+            <img src="images/fit6.webp" alt="Leather Gym Weightlifting Gloves" height="350" class="card-image-top img-fluid">
             <div class="card-body">
-                <p class="card-text text-center"><b>Leather Gym Weightlifting Gloves</b></p>
-                <p class="card-text text-center text-danger"><b><i class="fa-solid fa-indian-rupee-sign"></i> 630</b></p>
-            </div>
-        </div>
-          
-</div>
-    <div class="row">
-        <div class="col-md-4 ">
-            <img src="images/fit7.jpg" alt="" height="350px" class="card-image-top">
-            <div class="card-body">
-                <p class="card-text text-center"><b>Nivia Resistance Exercise Band</b></p>
-                <p class="card-text text-center text-danger"><b><i class="fa-solid fa-indian-rupee-sign"></i> 300</b></p>
-            </div>
-        </div>
-        <div class="col-md-4 ">
-            <img src="images/fit8.webp" alt="" height="350px" class="card-image-top">
-            <div class="card-body">
-                <p class="card-text text-center"><b>Crystal 2.0 With Strap</b></p>
-                <p class="card-text text-center text-danger"><b><i class="fa-solid fa-indian-rupee-sign"></i> 480</b></p>
-            </div>
-        </div>
-        <div class="col-md-4 ">
-            <img src="images/fit9.webp" alt="" height="350px" class="card-image-top">
-            <div class="card-body">
-                <p class="card-text text-center"><b>Electra Sports Bottle</b></p>
-                <p class="card-text text-center text-danger"><b><i class="fa-solid fa-indian-rupee-sign"></i> 190</b></p>
+                <h3 class="card-text text-center h5"><b>Leather Gym Weightlifting Gloves</b></h3>
+                <p class="card-text text-center text-danger"><b>₹630</b></p>
             </div>
         </div>
           
 </div>
     <div class="row">
-        <div class="col-md-4 ">
-            <img src="images/fit10.webp" alt="" height="350px" class="card-image-top">
+        <div class="col-md-4">
+            <img src="images/fit7.jpg" alt="Nivia Resistance Exercise Band" height="350" class="card-image-top img-fluid">
             <div class="card-body">
-                <p class="card-text text-center"><b>Anti Burst Exercise Ball</b></p>
-                <p class="card-text text-center text-danger"><b><i class="fa-solid fa-indian-rupee-sign"></i> 1,094</b></p>
+                <h3 class="card-text text-center h5"><b>Nivia Resistance Exercise Band</b></h3>
+                <p class="card-text text-center text-danger"><b>₹300</b></p>
             </div>
         </div>
-        <div class="col-md-4 ">
-            <img src="images/fit11.webp" alt="" height="350px" class="card-image-top">
+        <div class="col-md-4">
+            <img src="images/fit8.webp" alt="Crystal 2.0 With Strap" height="350" class="card-image-top img-fluid">
             <div class="card-body">
-                <p class="card-text text-center"><b>Nivia Tessla-1 Track Pant</b></p>
-                <p class="card-text text-center text-danger"><b><i class="fa-solid fa-indian-rupee-sign"></i> 699</b></p>
+                <h3 class="card-text text-center h5"><b>Crystal 2.0 With Strap</b></h3>
+                <p class="card-text text-center text-danger"><b>₹480</b></p>
             </div>
         </div>
-        <div class="col-md-4 ">
-            <img src="images/fit12.jpg" alt="" height="350px" class="card-image-top">
+        <div class="col-md-4">
+            <img src="images/fit9.webp" alt="Electra Sports Bottle" height="350" class="card-image-top img-fluid">
             <div class="card-body">
-                <p class="card-text text-center"><b>Coral</b></p>
-                <p class="card-text text-center text-danger"><b><i class="fa-solid fa-indian-rupee-sign"></i> 399</b></p>
+                <h3 class="card-text text-center h5"><b>Electra Sports Bottle</b></h3>
+                <p class="card-text text-center text-danger"><b>₹190</b></p>
             </div>
         </div>
           
 </div>
     <div class="row">
-        <div class="col-md-4 ">
-            <img src="images/fit13.webp" alt="" height="350px" class="card-image-top">
+        <div class="col-md-4">
+            <img src="images/fit10.webp" alt="Anti Burst Exercise Ball" height="350" class="card-image-top img-fluid">
             <div class="card-body">
-                <p class="card-text text-center"><b>Pro Grip</b></p>
-                <p class="card-text text-center text-danger"><b><i class="fa-solid fa-indian-rupee-sign"></i> 720</b></p>
+                <h3 class="card-text text-center h5"><b>Anti Burst Exercise Ball</b></h3>
+                <p class="card-text text-center text-danger"><b>₹1,094</b></p>
             </div>
         </div>
-        <div class="col-md-4 ">
-            <img src="images/fit14.webp" alt="" height="350px" class="card-image-top">
+        <div class="col-md-4">
+            <img src="images/fit11.webp" alt="Nivia Tessla-1 Track Pant" height="350" class="card-image-top img-fluid">
             <div class="card-body">
-                <p class="card-text text-center"><b>Running Gloves</b></p>
-                <p class="card-text text-center text-danger"><b><i class="fa-solid fa-indian-rupee-sign"></i> 335</b></p>
+                <h3 class="card-text text-center h5"><b>Nivia Tessla-1 Track Pant</b></h3>
+                <p class="card-text text-center text-danger"><b>₹699</b></p>
             </div>
         </div>
-        <div class="col-md-4 ">
-            <img src="images/fit15.webp" alt="" height="350px" class="card-image-top">
+        <div class="col-md-4">
+            <img src="images/fit12.jpg" alt="Coral" height="350" class="card-image-top img-fluid">
             <div class="card-body">
-                <p class="card-text text-center"><b>Nivia Hydra-1 Round Tee</b></p>
-                <p class="card-text text-center text-danger"><b><i class="fa-solid fa-indian-rupee-sign"></i> 570</b></p>
+                <h3 class="card-text text-center h5"><b>Coral</b></h3>
+                <p class="card-text text-center text-danger"><b>₹399</b></p>
+            </div>
+        </div>
+          
+</div>
+    <div class="row">
+        <div class="col-md-4">
+            <img src="images/fit13.webp" alt="Pro Grip" height="350" class="card-image-top img-fluid">
+            <div class="card-body">
+                <h3 class="card-text text-center h5"><b>Pro Grip</b></h3>
+                <p class="card-text text-center text-danger"><b>₹720</b></p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <img src="images/fit14.webp" alt="Running Gloves" height="350" class="card-image-top img-fluid">
+            <div class="card-body">
+                <h3 class="card-text text-center h5"><b>Running Gloves</b></h3>
+                <p class="card-text text-center text-danger"><b>₹335</b></p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <img src="images/fit15.webp" alt="Nivia Hydra-1 Round Tee" height="350" class="card-image-top img-fluid">
+            <div class="card-body">
+                <h3 class="card-text text-center h5"><b>Nivia Hydra-1 Round Tee</b></h3>
+                <p class="card-text text-center text-danger"><b>₹570</b></p>
             </div>
         </div>
           
@@ -332,64 +412,55 @@
     </div>
 
     <!-- Footer start  -->
-
     <div class="p-2 pt-5">
         <div class="col-md-12 footer">
             <div class="row">
                 <div class="col-md-3">
                    <h3 class="text-white ps-4 pt-4">#MoveUp by signing up</h3>
                    <div class="input-group mt-2 ps-4 pt-4 pe-4">
-                    <input type="text" name="email" class="form-control bg-dark" placeholder="Your email address">
+                    <input type="email" name="email" class="form-control bg-dark text-white" placeholder="Your email address" required>
                     <div class="input-group-append">
-                      <span><a href="" class="input-group-text text-danger bg-dark text-decoration-none">SEND</a></span>
+                      <button type="submit" class="input-group-text text-danger bg-dark text-decoration-none border-0">SEND</button>
                     </div>
                   </div>
                     <div class="text-white ps-2 pt-4 icons">
-                          <a href="#"> <abbr class="text-white" title="Follow on Facebook"><i class="bi bi-facebook p-3"></abbr></i></a>  
-                          <a href="#"> <abbr class="text-white" title="Follow on Twitter X"><i class="bi bi-twitter-x p-3"></abbr></i></a>  
-                          <a href="#"> <abbr class="text-white" title="Follow on Instagram"><i class="bi bi-instagram p-3"></abbr></i></a>  
-                          <a href="#"> <abbr class="text-white" title="Follow on Youtube"><i class="bi bi-youtube p-3"></abbr></i></a>  
+                          <a href="#" class="text-white" aria-label="Follow on Facebook"><i class="bi bi-facebook p-3"></i></a>  
+                          <a href="#" class="text-white" aria-label="Follow on Twitter X"><i class="bi bi-twitter-x p-3"></i></a>  
+                          <a href="#" class="text-white" aria-label="Follow on Instagram"><i class="bi bi-instagram p-3"></i></a>  
+                          <a href="#" class="text-white" aria-label="Follow on Youtube"><i class="bi bi-youtube p-3"></i></a>  
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="p-4 text-white list1">
                         <h4 class="text-white pb-3">COMPANY INFORMATION</h4>
-                       
                         <a href="#" class="text-decoration-none">About us</a><br><br>
                         <a href="#" class="text-decoration-none">Contact</a><br><br>
-                        <a href="#" class="text-decoration-none">Terms and Condition</a><br><br>
+                        <a href="#" class="text-decoration-none">Terms and Conditions</a><br><br>
                         <a href="#" class="text-decoration-none">Privacy Policy</a><br><br>
                         <a href="#" class="text-decoration-none">Exchange & Return Policy</a><br><br>
                         <a href="#" class="text-decoration-none">Track Order</a><br><br>
                         <a href="#" class="text-decoration-none">Blogs</a><br><br>
                         <a href="#" class="text-decoration-none">Catalogues</a><br><br>
                         <a href="#" class="text-decoration-none">CSR Policy</a><br>
-                       
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="p-4 text-white list1">
                         <h4 class="text-white pb-3">NIVIA AFFILIATIONS</h4>
-                       
                         <a href="#" class="text-decoration-none">AIFF</a><br><br>
                         <a href="#" class="text-decoration-none">ISL</a><br><br>
                         <a href="#" class="text-decoration-none">Bhutan Football Federation</a><br><br>
-                        <a href="#" class="text-decoration-none">Shrilankan Football Federation</a><br><br>
+                        <a href="#" class="text-decoration-none">Sri Lankan Football Federation</a><br><br>
                         <a href="#" class="text-decoration-none">BFI</a><br><br>
                         <a href="#" class="text-decoration-none">VFI</a><br>
-                       
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="p-4 text-white list1">
                         <h4 class="text-white pb-3">CONNECT WITH US</h4>
-                       
-                       
-                        <a href="#" class="text-decoration-none"><i class="bi bi-telephone text-white"></i> +91-7567939840</a><br><br>
-                        <a href="#" class="text-decoration-none"><i class="bi bi-envelope text-white"></i> contact@nivia.com</a><br><br>
-                        <p class="text-whitw">(Mon-Sat,10:00am till 6:00pm)</p><br>
-                        
-                       
+                        <a href="tel:+917567939840" class="text-decoration-none"><i class="bi bi-telephone text-white"></i> +91-7567939840</a><br><br>
+                        <a href="mailto:contact@nivia.com" class="text-decoration-none"><i class="bi bi-envelope text-white"></i> contact@nivia.com</a><br><br>
+                        <p class="text-white">(Mon-Sat, 10:00am till 6:00pm)</p><br>
                     </div>
                 </div>
              </div>
@@ -401,7 +472,7 @@
                 <div class="col-md-3 header1 ps-4">
                     <a href="index.html" class="text-white text-decoration-none"><h2>YSPORTS</h2></a>
                 </div>
-                <div class="offset-md-6 col-md-3 pt-4 ps-4  text-white">© 2024 Niviasports, All Rights Reserved</div>
+                <div class="offset-md-6 col-md-3 pt-4 ps-4 text-white">© 2024 Niviasports, All Rights Reserved</div>
             </div>
         </div>
         </div>

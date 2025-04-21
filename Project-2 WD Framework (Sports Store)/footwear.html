@@ -4,364 +4,386 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
-  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footwear - Nivia Sports</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
     integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FOOTWEAR</title>
+    <style>
+    .navbar-brand {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+    }
+
+    .logo-text {
+        font-size: 2.5rem;
+        font-weight: 800;
+        letter-spacing: 1px;
+        color: #000;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-n {
+        color: #ff4d4d;
+        font-size: 3rem;
+        margin-right: 2px;
+        transform: skew(-10deg);
+    }
+
+    .logo-rest {
+        font-weight: 600;
+    }
+
+    .logo-tagline {
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #666;
+        margin-left: 8px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+        top: -8px;
+    }
+
+    .navbar-nav .nav-link {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+        transition: color 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #ff4d4d !important;
+    }
+
+    @media (max-width: 768px) {
+        .logo-text {
+            font-size: 2rem;
+        }
+        .logo-n {
+            font-size: 2.5rem;
+        }
+        .logo-tagline {
+            font-size: 0.7rem;
+            top: -6px;
+        }
+    }
+    </style>
 </head>
 <body>
     <!-- Header start -->
     <nav class="navbar navbar-expand-sm bg-white navbar-dark sticky-top justify-content-center">
         <div class="container-fluid">
             <div class="col-md-2 ps-5 header">
+                <a href="index.html" class="navbar-brand d-flex align-items-center" aria-label="Nivia Sports Home">
+                    <span class="logo-text">
+                        <span class="logo-n">N</span>
+                        <span class="logo-rest">IVIA</span>
+                    </span>
+                    <span class="logo-tagline">SPORTS</span>
+                </a>
+            </div>
+           
+            <div class="collapse navbar-collapse ps-5 col-md-10" id="collapsiveNav">
                 <ul class="navbar-nav">
-             <li class="nav-item">
-                <a href="index.html" class="nav-link text-dark"><h2>NIVIA</h2></a>
-             </li>
-            </ul>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark ps-5" href="apparel.html" aria-label="Apparel">APPAREL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark ps-5" href="footwear.html" aria-label="Footwear">FOOTWEAR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark ps-5" href="fitness.html" aria-label="Fitness">FITNESS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark ps-5" href="muscle-support.html" aria-label="Muscle Support">MUSCLE SUPPORT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark ps-5" href="accessorise.html" aria-label="Accessories">ACCESSORIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark ps-5" href="clubs.html" aria-label="Clubs">CLUBS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark ps-5" href="LoginSignup.html" aria-label="Login">LOGIN</a>
+                    </li>
+                </ul>
             </div>
-           
-            <div class="collapse navbar-collapse ps-5  col-md-10" id="collapsiveNav">
-            
-             
-    
-             <ul class="navbar-nav">
-                
-                <li class="'nav-item">
-                    <a class="nav-link text-dark ps-5" href="apparel.html">APPAREL</a>
-                </li>
-                <li class="'nav-item">
-                    <a class="nav-link text-dark ps-5" href="footwear.html">FOOTWEAR</a>
-                </li>
-                <li class="'nav-item">
-                    <a class="nav-link text-dark ps-5" href="fitness.html">FITNESS</a>
-                </li>
-                <li class="'nav-item">
-                    <a class="nav-link text-dark ps-5" href="muscle-support.html">MUSCLE SUPPORT</a>
-                </li>
-                <li class="'nav-item">
-                    <a class="nav-link text-dark ps-5" href="accessorise.html">ACCESSORISE</a>
-                </li>
-                <li class="'nav-item">
-                    <a class="nav-link text-dark ps-5" href="clubs.html">CLUBS</a>
-                </li>
-                <li class="'nav-item">
-                  <a class="nav-link text-dark ps-5" href="LoginSingnup.html">LOGIN</a>
-              </li>
-             </ul>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsiveNav">
-              <span class="bi bi-house-fill text-dark"></span>
-          </button>
-           
-           
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsiveNav" aria-controls="collapsiveNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="bi bi-list text-dark"></span>
+            </button>
         </div>
     </nav>
 
-    <!-- Header end  -->
-
     <!-- banner start  -->
-
     <div class="col-md-12">
-        <img src="images/banner3.webp" width="100%" alt="">
+        <img src="images/banner3.webp" width="100%" alt="Footwear Collection Banner" class="img-fluid">
     </div>
 
-    <!-- banner end  -->
-
     <!-- Section-1 start  -->
-
     <div class="ps-4">
         <div class="col-md-12">
-            
-        <ul class="breadcrumb">
-            <li class="breadcrumb-item"><a class="text-decoration-none text-dark" href="index.html">Home</a></li>
-            <li class="breadcrumb-item active"><a class="text-decoration-none text-dark" href="footwear.html"><b>Footwear</b></a></li>
-        </ul>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-decoration-none text-dark" href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a class="text-decoration-none text-dark" href="footwear.html"><b>Footwear</b></a></li>
+                </ol>
+            </nav>
         </div>
     </div>
 
     <div class="ps-4">
         <div class="col-md-12">
-            <div class="display-5">Sports Shose</div>
+            <h1 class="display-5">Sports Shoes</h1>
         </div>
     </div>
 
     <div class="ps-4 pt-3">
         <div class="row">
             <div class="col-md-3 slide1">
-               <div class="text-center"><b><i style="font-size: x-large;">Category</i></b></div><br>
-                <ul class="list-group ">
+               <div class="text-center"><h2 class="h4"><b>Category</b></h2></div><br>
+                <ul class="list-group" role="list">
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                       <b>Footwear</b>
-                      <span class="badge text-dark"><b>(64)</b></span>
+                      <span class="badge bg-dark" aria-label="64 items">64</span>
                     </li>
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                       Kids
-                      <span class="badge text-dark">8</span>
+                      <span class="badge bg-dark" aria-label="8 items">8</span>
                     </li>
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                       Men
-                      <span class="badge text-dark">84</span>
+                      <span class="badge bg-dark" aria-label="84 items">84</span>
                     </li>
                   </ul><br><br>
 
-                  
-                  <div class="text-center"><b><i style="font-size: x-large;">Size</i></b></div><br>
+                  <div class="text-center"><h2 class="h4"><b>Size</b></h2></div><br>
     
                   <div class="col-md-12 foota text-center">
-                    <a href="" class="text-decoration-none text-dark btn btn-outline-secondary text-center">1</a>
-                    <a href="" class="text-decoration-none text-dark btn btn-outline-secondary text-center">2</a>
-                    <a href="" class="text-decoration-none text-dark btn btn-outline-secondary text-center">3</a>
-                    <a href="" class="text-decoration-none text-dark btn btn-outline-secondary text-center">4</a>
-                    
+                    <button class="btn btn-outline-secondary text-center" aria-label="Size 1">1</button>
+                    <button class="btn btn-outline-secondary text-center" aria-label="Size 2">2</button>
+                    <button class="btn btn-outline-secondary text-center" aria-label="Size 3">3</button>
+                    <button class="btn btn-outline-secondary text-center" aria-label="Size 4">4</button>
                   </div><br>
                   <div class="col-md-12 foota text-center">
-                    <a href="" class="text-decoration-none text-dark btn btn-outline-secondary text-center">5</a>
-                    <a href="" class="text-decoration-none text-dark btn btn-outline-secondary text-center">6</a>
-                    <a href="" class="text-decoration-none text-dark btn btn-outline-secondary text-center">7</a>
-                    <a href="" class="text-decoration-none text-dark btn btn-outline-secondary text-center">8</a>
-                    
+                    <button class="btn btn-outline-secondary text-center" aria-label="Size 5">5</button>
+                    <button class="btn btn-outline-secondary text-center" aria-label="Size 6">6</button>
+                    <button class="btn btn-outline-secondary text-center" aria-label="Size 7">7</button>
+                    <button class="btn btn-outline-secondary text-center" aria-label="Size 8">8</button>
                   </div><br>
                   <div class="col-md-12 foota text-center">
-                    <a href="" class="text-decoration-none text-dark btn btn-outline-secondary text-center">9</a>
-                    <a href="" class="text-decoration-none text-dark btn btn-outline-secondary text-center">10</a>
-                    <a href="" class="text-decoration-none text-dark btn btn-outline-secondary text-center">11</a>
-                    <a href="" class="text-decoration-none text-dark btn btn-outline-secondary text-center">12</a>
-                    
+                    <button class="btn btn-outline-secondary text-center" aria-label="Size 9">9</button>
+                    <button class="btn btn-outline-secondary text-center" aria-label="Size 10">10</button>
+                    <button class="btn btn-outline-secondary text-center" aria-label="Size 11">11</button>
+                    <button class="btn btn-outline-secondary text-center" aria-label="Size 12">12</button>
                   </div><br>
                   <div class="col-md-12 foota text-center">
-                    <a href="" class="text-decoration-none text-dark btn btn-outline-secondary text-center">13</a>
+                    <button class="btn btn-outline-secondary text-center" aria-label="Size 13">13</button>
                   </div>
                   <br>
+            </div>
 
-            </div>
-       
-
-    <!-- Section-1 end  -->
-
-    <!-- Section-2 start  -->
-
-    <div class="col-md-9 slide2">
-        <div class="row">
-            <div class="col-md-4">
-                <img src="images/foot1.webp" alt="" height="350px" class="card-image-top">
-                <div class="card-body">
-                    <p class="card-text text-center"><b>Nivia Engraver 2.0 Basketball Shose</b></p>
-                    <p class="card-text text-center"><i class="fa-solid fa-indian-rupee-sign"></i> 1,999<b> <del><i class="fa-solid fa-indian-rupee-sign"></i> 2,999 </del> <span style="color: orangered;"> 33% Off</span></b></p>
+            <div class="col-md-9 slide2">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="images/foot1.webp" alt="Nivia Engraver 2.0 Basketball Shoes" height="350" class="card-image-top img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-text text-center h5"><b>Nivia Engraver 2.0 Basketball Shoes</b></h3>
+                            <p class="card-text text-center"><b>₹1,999</b> <del style="opacity: 0.8;">₹2,999</del> <span class="text-danger">33% Off</span></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/foot2.webp" alt="HY-Court 3.0" height="350" class="card-image-top img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-text text-center h5"><b>HY-Court 3.0</b></h3>
+                            <p class="card-text text-center"><b>₹2,099</b> <del style="opacity: 0.8;">₹2,199</del> <span class="text-danger">5% Off</span></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/foot3.webp" alt="Powerstrike 4.0" height="350" class="card-image-top img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-text text-center h5"><b>Powerstrike 4.0</b></h3>
+                            <p class="card-text text-center text-danger"><b>₹2,599</b></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <img src="images/foot2.webp" alt="" height="350px" class="card-image-top">
-                <div class="card-body">
-                    <p class="card-text text-center"><b>HY-Court 3.0</b></p>
-                    <p class="card-text text-center"><i class="fa-solid fa-indian-rupee-sign"></i> 2,099<b> <del><i class="fa-solid fa-indian-rupee-sign"></i> 2,199 </del> <span style="color: orangered;"> 5% Off</span></b></p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="images/foot4.webp" alt="Oslar 3.0 Turf" height="350" class="card-image-top img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-text text-center h5"><b>Oslar 3.0 Turf</b></h3>
+                            <p class="card-text text-center"><b>₹1,030</b> <del style="opacity: 0.8;">₹1,585</del> <span class="text-danger">35% Off</span></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/foot5.webp" alt="Verdict" height="350" class="card-image-top img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-text text-center h5"><b>Verdict</b></h3>
+                            <p class="card-text text-center text-danger"><b>₹2,999</b></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/foot6.webp" alt="Pro Encounter 10.0 Football Stud" height="350" class="card-image-top img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-text text-center h5"><b>Pro Encounter 10.0 Football Stud</b></h3>
+                            <p class="card-text text-center text-danger"><b>₹1,215</b></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <img src="images/foot3.webp" alt="" height="350px" class="card-image-top">
-                <div class="card-body">
-                    <p class="card-text text-center"><b>Powerstrike 4.0</b></p>
-                    <p class="card-text text-center text-danger"><b><i class="fa-solid fa-indian-rupee-sign"></i> 2,599</b></p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="images/foot7.webp" alt="Flash 2.0" height="350" class="card-image-top img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-text text-center h5"><b>Flash 2.0</b></h3>
+                            <p class="card-text text-center text-danger"><b>₹1,120</b></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/foot8.webp" alt="Dominator 2.0" height="350" class="card-image-top img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-text text-center h5"><b>Dominator 2.0</b></h3>
+                            <p class="card-text text-center text-danger"><b>₹1,499</b></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/foot9.webp" alt="Appeal 3.0" height="350" class="card-image-top img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-text text-center h5"><b>Appeal 3.0</b></h3>
+                            <p class="card-text text-center text-danger"><b>₹1,549</b></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-              
-    </div>
-        <div class="row">
-            <div class="col-md-4 ">
-                <img src="images/foot4.webp" alt="" height="350px" class="card-image-top">
-                <div class="card-body">
-                    <p class="card-text text-center"><b>Oslar 3.0 Turf</b></p>
-                    <p class="card-text text-center"><i class="fa-solid fa-indian-rupee-sign"></i> 1,030<b> <del><i class="fa-solid fa-indian-rupee-sign"></i> 1,585 </del> <span style="color: orangered;"> 35% Off</span></b></p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="images/foot10.webp" alt="Airstrike Football Stud" height="350" class="card-image-top img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-text text-center h5"><b>Airstrike Football Stud</b></h3>
+                            <p class="card-text text-center text-danger"><b>₹999</b></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/foot11.webp" alt="Oslar 3.0" height="350" class="card-image-top img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-text text-center h5"><b>Oslar 3.0</b></h3>
+                            <p class="card-text text-center text-danger"><b>₹1,034</b></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/foot12.webp" alt="Oslar Blade 3.0" height="350" class="card-image-top img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-text text-center h5"><b>Oslar Blade 3.0</b></h3>
+                            <p class="card-text text-center text-danger"><b>₹1,359</b></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4 ">
-                <img src="images/foot5.webp" alt="" height="350px" class="card-image-top">
-                <div class="card-body">
-                    <p class="card-text text-center"><b>Verdict</b></p>
-                    <p class="card-text text-center text-danger"><b><i class="fa-solid fa-indian-rupee-sign"></i> 2,999</b></p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="images/foot13.webp" alt="Nivia Street Art Basketball Shoes" height="350" class="card-image-top img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-text text-center h5"><b>Nivia Street Art Basketball Shoes</b></h3>
+                            <p class="card-text text-center text-danger"><b>₹3,199</b></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/foot14.webp" alt="Powerstrike 3.0" height="350" class="card-image-top img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-text text-center h5"><b>Powerstrike 3.0</b></h3>
+                            <p class="card-text text-center text-danger"><b>₹1,949</b></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/foot15.webp" alt="Carbonite 6.0 Football Stud" height="350" class="card-image-top img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-text text-center h5"><b>Carbonite 6.0 Football Stud</b></h3>
+                            <p class="card-text text-center text-danger"><b>₹849</b></p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4 ">
-                <img src="images/foot6.webp" alt="" height="350px" class="card-image-top">
-                <div class="card-body">
-                    <p class="card-text text-center"><b>Pro Encounter 10.0 Football Stud</b></p>
-                    <p class="card-text text-center text-danger"><b><i class="fa-solid fa-indian-rupee-sign"></i> 1,215</b></p>
-                </div>
-            </div>
-              
-    </div>
-        <div class="row">
-            <div class="col-md-4 ">
-                <img src="images/foot7.webp" alt="" height="350px" class="card-image-top">
-                <div class="card-body">
-                    <p class="card-text text-center"><b>Flash 2.0</b></p>
-                    <p class="card-text text-center text-danger"><b><i class="fa-solid fa-indian-rupee-sign"></i> 1,120</b></p>
-                </div>
-            </div>
-            <div class="col-md-4 ">
-                <img src="images/foot8.webp" alt="" height="350px" class="card-image-top">
-                <div class="card-body">
-                    <p class="card-text text-center"><b>Dominator 2.0</b></p>
-                    <p class="card-text text-center text-danger"><b><i class="fa-solid fa-indian-rupee-sign"></i> 1,499</b></p>
-                </div>
-            </div>
-            <div class="col-md-4 ">
-                <img src="images/foot9.webp" alt="" height="350px" class="card-image-top">
-                <div class="card-body">
-                    <p class="card-text text-center"><b>Appeal 3.0</b></p>
-                    <p class="card-text text-center text-danger"><b><i class="fa-solid fa-indian-rupee-sign"></i> 1,549</b></p>
-                </div>
-            </div>
-              
-    </div>
-        <div class="row">
-            <div class="col-md-4 ">
-                <img src="images/foot10.webp" alt="" height="350px" class="card-image-top">
-                <div class="card-body">
-                    <p class="card-text text-center"><b>Airstrike Football Stud</b></p>
-                    <p class="card-text text-center text-danger"><b><i class="fa-solid fa-indian-rupee-sign"></i> 999</b></p>
-                </div>
-            </div>
-            <div class="col-md-4 ">
-                <img src="images/foot11.webp" alt="" height="350px" class="card-image-top">
-                <div class="card-body">
-                    <p class="card-text text-center"><b>Oslar 3.0</b></p>
-                    <p class="card-text text-center text-danger"><b><i class="fa-solid fa-indian-rupee-sign"></i> 1,034</b></p>
-                </div>
-            </div>
-            <div class="col-md-4 ">
-                <img src="images/foot12.webp" alt="" height="350px" class="card-image-top">
-                <div class="card-body">
-                    <p class="card-text text-center"><b>Oslar Blade 3.0</b></p>
-                    <p class="card-text text-center text-danger"><b><i class="fa-solid fa-indian-rupee-sign"></i> 1,359</b></p>
-                </div>
-            </div>
-              
-    </div>
-        <div class="row">
-            <div class="col-md-4 ">
-                <img src="images/foot13.webp" alt="" height="350px" class="card-image-top">
-                <div class="card-body">
-                    <p class="card-text text-center"><b>Nivia Street Art Basketball Shose</b></p>
-                    <p class="card-text text-center text-danger"><b><i class="fa-solid fa-indian-rupee-sign"></i> 3,199</b></p>
-                </div>
-            </div>
-            <div class="col-md-4 ">
-                <img src="images/foot14.webp" alt="" height="350px" class="card-image-top">
-                <div class="card-body">
-                    <p class="card-text text-center"><b>Powerstrike 3.0</b></p>
-                    <p class="card-text text-center text-danger"><b><i class="fa-solid fa-indian-rupee-sign"></i> 1,949</b></p>
-                </div>
-            </div>
-            <div class="col-md-4 ">
-                <img src="images/foot15.webp" alt="" height="350px" class="card-image-top">
-                <div class="card-body">
-                    <p class="card-text text-center"><b>Carbonite 6.0 Football Stud</b></p>
-                    <p class="card-text text-center text-danger"><b><i class="fa-solid fa-indian-rupee-sign"></i> 849</b></p>
-                </div>
-            </div>
-              
-    </div>
-        <div class="row">
-            <div class="col-md-4 ">
-                <img src="images/foot16.webp" alt="" height="350px" class="card-image-top">
-                <div class="card-body">
-                    <p class="card-text text-center"><b>Encounter 10.0 Football Stud</b></p>
-                    <p class="card-text text-center text-danger"><b><i class="fa-solid fa-indian-rupee-sign"></i> 935</b></p>
-                </div>
-            </div>
-            <div class="col-md-4 ">
-                <img src="images/foot17.webp" alt="" height="350px" class="card-image-top">
-                <div class="card-body">
-                    <p class="card-text text-center"><b>Nivia Grafity Basketball Shose</b></p>
-                    <p class="card-text text-center text-danger"><b><i class="fa-solid fa-indian-rupee-sign"></i> 2,949</b></p>
-                </div>
-            </div>
-            <div class="col-md-4 ">
-                <img src="images/foot18.webp" alt="" height="350px" class="card-image-top">
-                <div class="card-body">
-                    <p class="card-text text-center"><b>Offroad Running Shose</b></p>
-                    <p class="card-text text-center text-danger"><i class="fa-solid fa-indian-rupee-sign"></i><b> 1,999</b></p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="images/foot16.webp" alt="Encounter 10.0 Football Stud" height="350" class="card-image-top img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-text text-center h5"><b>Encounter 10.0 Football Stud</b></h3>
+                            <p class="card-text text-center text-danger"><b>₹935</b></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/foot17.webp" alt="Nivia Grafity Basketball Shoes" height="350" class="card-image-top img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-text text-center h5"><b>Nivia Grafity Basketball Shoes</b></h3>
+                            <p class="card-text text-center text-danger"><b>₹2,949</b></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/foot18.webp" alt="Offroad Running Shoes" height="350" class="card-image-top img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-text text-center h5"><b>Offroad Running Shoes</b></h3>
+                            <p class="card-text text-center text-danger"><b>₹1,999</b></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    </div>
-    </div>
-</div>
-</div>
-
-    <!-- Section-2 end  -->
-
-
-
     <!-- Footer start  -->
-
     <div class="p-2 pt-5">
         <div class="col-md-12 footer">
             <div class="row">
                 <div class="col-md-3">
                    <h3 class="text-white ps-4 pt-4">#MoveUp by signing up</h3>
                    <div class="input-group mt-2 ps-4 pt-4 pe-4">
-                    <input type="text" name="email" class="form-control bg-dark" placeholder="Your email address">
+                    <input type="email" name="email" class="form-control bg-dark text-white" placeholder="Your email address" required>
                     <div class="input-group-append">
-                      <span><a href="" class="input-group-text text-danger bg-dark text-decoration-none">SEND</a></span>
+                      <button type="submit" class="input-group-text text-danger bg-dark text-decoration-none border-0">SEND</button>
                     </div>
                   </div>
                     <div class="text-white ps-2 pt-4 icons">
-                          <a href="#"> <abbr class="text-white" title="Follow on Facebook"><i class="bi bi-facebook p-3"></abbr></i></a>  
-                          <a href="#"> <abbr class="text-white" title="Follow on Twitter X"><i class="bi bi-twitter-x p-3"></abbr></i></a>  
-                          <a href="#"> <abbr class="text-white" title="Follow on Instagram"><i class="bi bi-instagram p-3"></abbr></i></a>  
-                          <a href="#"> <abbr class="text-white" title="Follow on Youtube"><i class="bi bi-youtube p-3"></abbr></i></a>  
+                          <a href="#" class="text-white" aria-label="Follow on Facebook"><i class="bi bi-facebook p-3"></i></a>  
+                          <a href="#" class="text-white" aria-label="Follow on Twitter X"><i class="bi bi-twitter-x p-3"></i></a>  
+                          <a href="#" class="text-white" aria-label="Follow on Instagram"><i class="bi bi-instagram p-3"></i></a>  
+                          <a href="#" class="text-white" aria-label="Follow on Youtube"><i class="bi bi-youtube p-3"></i></a>  
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="p-4 text-white list1">
                         <h4 class="text-white pb-3">COMPANY INFORMATION</h4>
-                       
                         <a href="#" class="text-decoration-none">About us</a><br><br>
                         <a href="#" class="text-decoration-none">Contact</a><br><br>
-                        <a href="#" class="text-decoration-none">Terms and Condition</a><br><br>
+                        <a href="#" class="text-decoration-none">Terms and Conditions</a><br><br>
                         <a href="#" class="text-decoration-none">Privacy Policy</a><br><br>
                         <a href="#" class="text-decoration-none">Exchange & Return Policy</a><br><br>
                         <a href="#" class="text-decoration-none">Track Order</a><br><br>
                         <a href="#" class="text-decoration-none">Blogs</a><br><br>
                         <a href="#" class="text-decoration-none">Catalogues</a><br><br>
                         <a href="#" class="text-decoration-none">CSR Policy</a><br>
-                       
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="p-4 text-white list1">
                         <h4 class="text-white pb-3">NIVIA AFFILIATIONS</h4>
-                       
                         <a href="#" class="text-decoration-none">AIFF</a><br><br>
                         <a href="#" class="text-decoration-none">ISL</a><br><br>
                         <a href="#" class="text-decoration-none">Bhutan Football Federation</a><br><br>
-                        <a href="#" class="text-decoration-none">Shrilankan Football Federation</a><br><br>
+                        <a href="#" class="text-decoration-none">Sri Lankan Football Federation</a><br><br>
                         <a href="#" class="text-decoration-none">BFI</a><br><br>
                         <a href="#" class="text-decoration-none">VFI</a><br>
-                       
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="p-4 text-white list1">
                         <h4 class="text-white pb-3">CONNECT WITH US</h4>
-                       
-                       
-                        <a href="#" class="text-decoration-none"><i class="bi bi-telephone text-white"></i> +91-7567939840</a><br><br>
-                        <a href="#" class="text-decoration-none"><i class="bi bi-envelope text-white"></i> contact@nivia.com</a><br><br>
-                        <p class="text-whitw">(Mon-Sat,10:00am till 6:00pm)</p><br>
-                        
-                       
+                        <a href="tel:+917567939840" class="text-decoration-none"><i class="bi bi-telephone text-white"></i> +91-7567939840</a><br><br>
+                        <a href="mailto:contact@nivia.com" class="text-decoration-none"><i class="bi bi-envelope text-white"></i> contact@nivia.com</a><br><br>
+                        <p class="text-white">(Mon-Sat, 10:00am till 6:00pm)</p><br>
                     </div>
                 </div>
              </div>
@@ -373,12 +395,10 @@
                 <div class="col-md-3 header1 ps-4">
                     <a href="index.html" class="text-white text-decoration-none"><h2>YSPORTS</h2></a>
                 </div>
-                <div class="offset-md-6 col-md-3 pt-4 ps-4  text-white">© 2024 Niviasports, All Rights Reserved</div>
+                <div class="offset-md-6 col-md-3 pt-4 ps-4 text-white">© 2024 Niviasports, All Rights Reserved</div>
             </div>
         </div>
         </div>
-
     <!-- Footer end  -->
-
 </body>
 </html>
